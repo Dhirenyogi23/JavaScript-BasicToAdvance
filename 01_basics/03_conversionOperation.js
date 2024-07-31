@@ -12,8 +12,7 @@ let valueInNumber = Number(score);
 // console.log(typeof valueInNumber);   // number
 // console.log(valueInNumber);          // NaN
 
-
-//**************************************************************************** */
+// ---------------------------------------------------------------------------
 
 
 let isLoggedIn = null;
@@ -30,19 +29,57 @@ let booleanIsLogggedIn = Boolean(isLoggedIn);
 */
 
 
-//*********************************************************************** */
-
+//------------------------------------------------------------------------------
 
 // number to string conversion.
 
 let someNumber = 23;
-console.log(someNumber);       // it print 23
-console.log(typeof someNumber) // it return number
+// console.log(someNumber);       // it print 23
+// console.log(typeof someNumber) // it return number
 
 let numberConvertToNumber = String(someNumber);
-console.log(numberConvertToNumber);                 // it print 23
-console.log(typeof numberConvertToNumber);          // it return string
+// console.log(numberConvertToNumber);                 // it print 23
+// console.log(typeof numberConvertToNumber);          // it return string
 
 
 
-//***************************************************************************** */
+
+//******************************** Operations ********************************************* */
+
+
+let value = 3
+let negVal = -value
+// console.log(negVal);
+
+
+//--------------------------------------------------------------
+
+// console.log(2 + 2);
+// console.log(2 - 2);
+// console.log(2 * 2);
+// console.log(2 / 2);
+// console.log(2 ** 3);
+// console.log(2%3);
+
+
+//----------------------------------------------------------
+
+let str1 = "Hello";
+let str2 = " Dhiren"
+
+let str3 = str1 + str2
+// console.log(str3)
+
+
+//----------------------------------------------------------
+
+
+// console.log("1" + 2);        // 12
+// console.log(1 + "2");        // 12
+// console.log("1" + 2 + 3);   // 123
+// console.log(1 + 2 + "3")    // 33
+
+
+// ---------------------------------------------------------
+
+
