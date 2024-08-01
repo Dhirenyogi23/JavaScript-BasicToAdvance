@@ -72,3 +72,36 @@
 
 */ 
 
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+// Stack (Primitive)
+
+// let MyYoutubeName = "DhirenyogiYtchannel";
+
+// let anotherYoutubeName = MyYoutubeName;
+// anotherYoutubeName = "secondYogiChannel"
+
+// console.log(MyYoutubeName);
+// console.log(anotherYoutubeName);
+
+
+
+//-------------------------------------
+
+
+// Heap (Non-Primitive)
+
+// let userOne = {
+//   userName : "Dhiren@googledotcom",
+//   id :  "DY@ybl"
+// }
+
+// let userTwo = userOne;
+
+// userTwo.userName = "yogi@googledotcom";
+
+// console.log(userOne.userName);
+// console.log(userTwo.userName)
