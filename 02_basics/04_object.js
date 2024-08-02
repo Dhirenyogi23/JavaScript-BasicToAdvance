@@ -78,3 +78,46 @@ const users = [
 ]
 
 // console.log(users[1].email) 
+
+
+
+
+
+//------------------------------------------------------------------------------------------------
+
+// Object de-structure.
+
+const course = {
+    courseName: "JS in Nepali",
+    courseInstructor: "Dhiren",
+    price:1000
+}
+
+// console.log(course.courseName)                  // JS in Nepali
+
+const {courseInstructor: Instructor} = course
+console.log(Instructor)
+
+
+
+//----------------------------------------------------------------------------------------
+
+// json api
+
+
+// types of json api
+
+// {
+//     "name": "dhiren",
+//     "course": "javaScript",
+//     "price": 1000
+// }
+
+
+// another types of json api 
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
