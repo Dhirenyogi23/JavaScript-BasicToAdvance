@@ -90,3 +90,54 @@ function myName() {
 // }
 
 // console.log(loginUserMessage());
+
+
+
+
+//------------------------------------------------------------------------------------------------
+
+
+function calculateCartPrice(val1 , val2, ...num1) {
+    return num1
+}
+// console.log(calculateCartPrice(200, 500, 1000, 5000, 30000))
+
+
+
+//---------------------------------------------------------------------------------
+
+// passing object in function
+
+const user = {
+    name: "Dhiren",
+    age: 23
+}
+
+ function handleObj(anyUser){
+    console.log(`hello my name is ${anyUser.name} and i am ${anyUser.age} years old.`)
+}
+
+
+// handleObj(user);
+
+// handleObj({
+//     name: "sam",
+//     age: 25
+// })
+
+
+
+//-------------------------------------------------------------------------------------
+
+
+// passing array in function
+
+const myNewArr = ["hello", "Dhiren", "Yogi"];
+
+function returnSecondVal(getArrVal) {
+    return getArrVal[1]
+}
+
+// console.log(returnSecondVal(myNewArr))
+
+// console.log(returnSecondVal(["hello", "Dhiren", "Yogi"]))
