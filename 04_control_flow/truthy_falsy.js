@@ -78,7 +78,7 @@ let val1;
 // Ternary Operator syntax =>    condition ? true : false
 
 
-const IceCreamPrice = 50
+const IceCreamPrice = 120
 
-IceCreamPrice >= 30 ? console.log("ice cream price is high") : console.log("ice cream price is low")
+IceCreamPrice >= 100 ? console.log("ice cream price is high") : console.log("ice cream price is low")
 
