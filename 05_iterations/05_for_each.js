@@ -71,6 +71,8 @@ const myArray = [
 
 
 myArray.forEach((key) =>{
-    console.log(`${key.languageName} =>  ${key.fileName}`)  
+    // console.log(`${key.languageName} =>  ${key.fileName}`)  
     // console.log(key.fileName)  
+
+ 
 })
