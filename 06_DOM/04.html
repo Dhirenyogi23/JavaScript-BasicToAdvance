@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | last part</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+
+</body>
+
+<script>
+
+    // this is the first method and also normal method
+
+    function addLanguage(langName){
+     const li = document.createElement("li")
+     li.innerHTML = `${langName}`
+
+     const language =  document.querySelector(".language")
+     language.appendChild(li)
+    
+    }
+    addLanguage("python")
+    addLanguage("typeScript")
+    
+
+
+   // this is the second method and this is the optimum method to set the language
+
+
+    function addOptLang(langName) {
+        const li = document.createElement("li")
+       const createtext =  document.createTextNode(langName)
+       li.appendChild(createtext)
+
+       const language = document.querySelector(".language")
+       language.appendChild(li);
+    }
+
+    addOptLang("Golang")
+    addOptLang("Java")
+
+
+
+
+
+    // Edit part
+
+
+   const thirdList =  document.querySelector("li:nth-child(3)")
+
+ //    thirdList.innerHTML = "java"                 // first method
+ //   thirdList.outerHTML = "<li>json</li>"         // second method
+
+
+    const newli = document.createElement("li")
+
+    newli.textContent = "cSharp"
+    thirdList.replaceWith(newli)                      // third method 
+
+
+
+
+
+   //edit part 
+
+   const firstLi = document.querySelector("li:nth-child(1)")
+   console.log(firstLi)
+
+   const newLi = document.createElement("li")
+   newLi.textContent = "typescript"
+
+   firstLi.replaceWith(newLi)
+
+
+
+
+   // Remove part
+
+
+   const lastLang = document.querySelector("li:last-child")
+   lastLang.remove()
+    
+
+</script>
+
+</html>
