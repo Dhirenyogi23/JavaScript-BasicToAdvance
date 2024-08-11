@@ -242,3 +242,90 @@ function newGame(){
   })
 }
 ```
+
+
+
+## Project 5  Solution 
+
+```javaScript
+
+
+const insert = document.getElementById('insert')
+
+window.addEventListener('keydown', (e) => {
+ insert.innerHTML = `
+  <div class='color'>
+  <table>
+  <tr>
+    <th>key</th>
+    <th>keyCode</th>
+    <th>code</th>
+  </tr>
+  <tr>
+    <td>${e.key === ' ' ? 'space': e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+  </table>
+  </div>
+ `
+})
+```
+
+
+
+
+
+## Project 6  Solution 
+
+```javaScript
+
+
+// generate random color
+
+const randomColor = function(){
+  const hex = '0123456789ABCDEF'
+  let color = '#'
+
+  for(let i=0; i<6; i++){
+     color = color + hex[Math.floor(Math.random() *16)]
+  }
+  return color;
+  
+}
+console.log(randomColor())
+
+//__________________________________________________
+
+
+// start
+
+let intervalID;
+
+const startChangingColor = function(){
+
+  const changeBG = function(){
+    document.body.style.backgroundColor = randomColor()
+  }
+
+  if(!intervalID){
+    intervalID = setInterval(changeBG,1000)
+  } 
+}
+
+const start = document.getElementById('start')
+start.addEventListener('click',startChangingColor)
+
+
+// stop
+
+
+const stopChangingColor = function(){
+  clearInterval(intervalID)
+  intervalID = null
+}
+const stop = document.getElementById('stop')
+stop.addEventListener('click',stopChangingColor)
+
+
+```
