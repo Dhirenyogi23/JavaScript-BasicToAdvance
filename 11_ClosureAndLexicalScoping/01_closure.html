@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body style="background-color: #232323; color: aliceblue;">
+    
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+    
+</body>
+
+<script>
+
+
+    // ++++++++++++++++++  Lexical Scoping.  ++++++++++++++++++++++++
+
+
+    // function User(){
+    //     let username = "hitesh"
+    //     // console.log(secret)                  // error
+      
+    //     function inner(){
+    //         let secret = "pubg123"
+    //         console.log("inner", username)       // print :  inner hitesh
+    //     }
+    //     function innerTwo(){
+    //         console.log("innerTwo", username)   // print : innerTwo hitesh
+    //         // console.log(secret)              // error
+    //     }
+    //     inner()
+    //     innerTwo()
+    // }
+
+    // User()
+
+    // console.log("too outer", username);    //username is not defined.
+    
+
+
+
+  //++++++++++++++++++ closure. ++++++++++++++++++++++++++++++
+
+
+
+//   function jack(){
+//     const username = "hitesh";
+    
+//     function inner(){
+//         console.log("inner",username);
+//     }
+
+//     return inner
+//   }
+
+//   const jk = jack()
+//   jk()
+
+
+</script>
+
+<script>
+
+//____________________________________________________________
+
+
+//    const orange =  document.getElementById('orange')
+//    orange.addEventListener('click', function(){
+//     document.body.style.backgroundColor = 'orange'
+//    })
+
+//    const green = document.getElementById('green')
+//    green.addEventListener('click', function(){
+//     document.body.style.backgroundColor = 'green'
+//    })
+
+
+//____________________________________________________________
+
+
+function clickHandler(color){
+    // document.body.style.backgroundColor = `${color}`
+
+    return function(){
+        document.body.style.backgroundColor = `${color}`
+
+    }
+}
+
+// 1st method
+
+
+// const orange = document.getElementById('orange')
+// orange.addEventListener('click', clickHandler('orange'))
+
+// const green = document.getElementById('green')
+// green.addEventListener('click', clickHandler('green'))
+
+
+// 2nd method
+
+
+document.getElementById('orange').onclick = clickHandler('orange')
+document.getElementById('green').onclick = clickHandler('green')
+
+
+
+
+
+</script>
+
+</html>
